@@ -1,0 +1,7 @@
+C:\Users\User\Desktop\Prova_Diego\questoes\questoes\bin\Debug\questoes.exe.config
+C:\Users\User\Desktop\Prova_Diego\questoes\questoes\bin\Debug\questoes.exe
+C:\Users\User\Desktop\Prova_Diego\questoes\questoes\bin\Debug\questoes.pdb
+C:\Users\User\Desktop\Prova_Diego\questoes\questoes\obj\Debug\questoes.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Prova_Diego\questoes\questoes\obj\Debug\questoes.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Prova_Diego\questoes\questoes\obj\Debug\questoes.exe
+C:\Users\User\Desktop\Prova_Diego\questoes\questoes\obj\Debug\questoes.pdb

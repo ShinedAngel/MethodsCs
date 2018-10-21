@@ -9,11 +9,9 @@ namespace questoes
     class Program
     {
         // Implemente o método Maior(a, b) que recebe dois números inteiros como parâmetro e retorna qual deles é o maior.
-        static int Maior2(int a, int b)
+        static int Maior(int a, int b)
         {
-
             return (a > b) ? a : b;
-
         }
 
         // O índice de massa corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal.
@@ -92,24 +90,59 @@ namespace questoes
 
             static void Main(string[] args)
             {
-                // QUESTÃO 2 IMC
+                // QUESTÃO 01 - Dois números em parâmetro
+                Console.Write("\n\tOs números passados como parâmetro foi o 106 e 102. Sendo assim, o maior número é o ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine(Maior(106,102));
+
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.WriteLine("\n\t———————————————————————————————————————————————————————————————————————————————————————");
+
+                Console.ResetColor();
+
+                // QUESTÃO 02 - IMC
                 IMC imc = new IMC();
 
-                Console.WriteLine("Qual a sua altura? ");
+                Console.WriteLine("\n\tDigite o valor da sua altura utilizando virgula ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.Write("\t");
                 double altura = double.Parse(Console.ReadLine());
 
-                Console.WriteLine("\nQual o valor do seu peso? ");
+                Console.ResetColor();
+
+                Console.WriteLine("\n\tMe informe o valor do seu peso ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.Write("\t");
                 double peso = double.Parse(Console.ReadLine());
 
-                Double seuIMC = imc.calcular(peso, altura);
+                Console.ResetColor();
 
-                Console.WriteLine("\nSeu IMC é de " + seuIMC.ToString("N3"));
-                Console.Write("\nSua classificação é: " + imc.classificar(imc.calcular(peso, altura)));
-                Console.WriteLine("\n");
+                double seuIMC = imc.calcular(peso, altura);
 
-                // QUESTÃO IMPAR/PAR
-                Console.Write("The number passed as a parameter is ");
+                Console.Write("\n\tSeu IMC é de ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.Write(seuIMC.ToString("N1"));
+
+                Console.ResetColor();
+
+                Console.Write("\n\tSua classificação é: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.Write(imc.classificar(imc.calcular(peso, altura)));
+
+                Console.Write("\n");
+                Console.ResetColor();
+
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.WriteLine("\n\t———————————————————————————————————————————————————————————————————————————————————————");
+                Console.ResetColor();
+
+                // QUESTÃO 03 - Descobrir se é par ou ímpar
+                Console.Write("\n\tThe number passed as a parameter is ");
+
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.Write(Impar(10));
+
+                Console.ResetColor();
                 Console.ReadKey();
 
             }
